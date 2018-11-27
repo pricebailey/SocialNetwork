@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<title>Register</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link th:href="@{/css/style.css}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <nav>
+        <div>
+            <a th:href="@{/}"><b>Home</b></a>
+        </div>
+        <div>
+            <a th:href="@{/login}">Sign In</a>
+        </div>
+        <div>
+        	<a th:href="@{/create}">Register</a>
+        </div>
+         <div>
+        	<a th:href="@{/test}">test</a>
+        </div>
+    </nav>
+    <form>
+<input id="firstName" placeholder="First Name" />
+<input id="lastName" placeholder="Last Name" />
+<input id="username" placeholder="Username" />
+<input id="password" placeholder="Password" />
+<button id="registerSubmit" >Submit</button>
+</form>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="userPost.js"></script>    
+    
+    
+</body>
+</html>
